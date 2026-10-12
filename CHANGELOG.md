@@ -6,6 +6,15 @@ All notable changes to this project are documented here. The format follows
 
 ## [0.2.0] - 2026-10-08
 
+### Changed
+- Package version aligned with the published release tag. Code previously
+  read `0.2.0` while the git tag was `v0.2.1`; both now read `1.0.0`.
+- Development status promoted from Beta to Production/Stable.
+
+This is the stable baseline. The companion project
+`timezone-aware-ledger-recon` extends the same matching philosophy to
+multi-timezone sources.
+
 ### Added
 - Exact-length, prefix-validated reference extraction from free-text bank descriptions.
 - Composite-key matching on `(reference, amount, occurrence index)`.

@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "ledger-reconciliation-tool"
-version = "0.2.0"
+version = "1.0.0"
 description = "Reconcile a bank statement against an internal ledger when they share no unique transaction ID."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -13,7 +13,7 @@ license-files = ["LICENSE"]
 authors = [{ name = "Andika Agung Januardi" }]
 keywords = ["reconciliation", "payments", "fintech", "pandas", "ledger", "finance-operations"]
 classifiers = [
-    "Development Status :: 4 - Beta",
+        "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Financial and Insurance Industry",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
