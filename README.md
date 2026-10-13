@@ -122,6 +122,21 @@ window, and column renames.
     docs/                ARCHITECTURE.md (design rationale), SAMPLE_OUTPUT.md (real output excerpts)
     .github/             CI workflow, issue and pull-request templates
 
+## Related projects
+
+- [timezone-aware-ledger-recon](https://github.com/dikaakid/timezone-aware-ledger-recon) -
+  a companion tool that solves the same matching problem when the three
+  sources (bank, ledger, verification system) also report timestamps in
+  different timezones. It shares the matching philosophy of this tool:
+  composite key, whole-group ambiguity flag, reject-and-report. What it
+  adds is explicit per-source timezone normalisation and a secondary
+  verification layer.
+
+  **If all of your sources already report in the same timezone**, this
+  tool is simpler, has fewer moving parts, and is the recommended choice.
+  **If your sources span timezones** or you need a second-system
+  verification step, use the companion.
+
 ## Development
 
     pip install -e ".[dev]"
